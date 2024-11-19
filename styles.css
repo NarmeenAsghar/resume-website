@@ -1,0 +1,570 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: url('backgroundimage.avif') no-repeat center/cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #FFF5E1;
+    justify-content: space-between;
+    background: #800020;
+    border-radius: 30px;
+}
+
+header .italic {
+    margin: 6px;
+    padding-left: 40px;
+    color: #FFF5E1;
+    font-size: 2rem;
+    position: sticky;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #FFF5E1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-right: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-toggle:checked + .menu-icon + .navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #800020;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 1200px;
+    height: fit-content;
+    margin: 50px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0 8px 32px 0 black;
+    box-sizing: border-box;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    padding-top: 40px;
+}
+
+.home-content {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.home-content .typing-text {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typing 2s steps(30) infinite, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.home-content p {
+    font-size: 1.30rem;
+    color: black;
+    font-weight: 500;
+}
+
+.img {
+    border-radius: 30px;
+    opacity: 0.7;
+    box-shadow: 0 4px 10px 0 rgb(250, 2, 15);
+}
+
+.parent img {
+    height: 100px;
+    width: 250px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+
+  .parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .work-card {
+    position: relative;
+  }
+
+  .work-card .box {
+    height: 200px;
+    width: 300px;
+    transition: 0.5s;
+  }
+
+  .work-card .box.box1.content {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+
+  .work-card:hover.content {
+    opacity: 1;
+  }
+
+  .work-card .box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #800020, #a7a6a5, #800020);
+    transform: translateY(100px);
+    z-index: 1;
+  }
+
+  .work-card:hover .box1 {
+    transform: translateY(0);
+    box-shadow: 0 0 50px #800020;
+  }
+
+  .work-card .box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c8c6;
+    box-shadow: 0 20px 50px rgb(29, 28, 28);
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translateY(-100px);
+  }
+
+  .work-card:hover .box2 {
+    transform: translateY(0);
+  }
+
+  .work-card p{
+    margin: 0%;
+  }
+
+  .work-card button {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+    color: black;
+    border: 1px solid #333;
+    padding: 5px;
+    font-weight: 900;
+  }
+
+  .work-card h3 {
+    font-size: 20px;
+    margin: 10px 0 0;
+    padding: 0%;
+    color: white;
+    text-align: center;
+  }
+
+  .resume-card {
+    position: relative;
+  }
+
+  .resume-card .box {
+    height: 200px;
+    width: 300px;
+    transition: 0.5s;
+  }
+
+  .resume-card .box.box1.content {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+  
+  .resume-card:hover.content {
+    opacity: 1;
+  }
+
+  .resume-card .box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #800020, #a7a6a5, #800020);
+    transform: translateY(100px);
+    z-index: 1;
+  }
+
+  .resume-card:hover .box1 {
+    transform: translateY(0);
+    box-shadow: 0 0 50px #800020;
+  }
+  
+  .resume-card .box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c8c6;
+    box-shadow: 0 20px 50px rgb(29, 28, 28);
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translateY(-100px);
+  }
+
+  .resume-card:hover .box2 {
+    transform: translateY(0);
+  }
+
+  .resume-card p{
+    margin: 0%;
+  }
+
+  .resume-card button {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+    color: black;
+    border: 1px solid #333;
+    padding: 5px;
+    font-weight: 900;
+  }
+
+  .resume-card h3 {
+    font-size: 20px;
+    margin: 10px 0 0;
+    padding: 0%;
+    color: white;
+    text-align: center;
+  }
+
+  .faq-card {
+    position: relative;
+  }
+
+  .faq-card .box {
+    height: 200px;
+    width: 300px;
+    transition: 0.5s;
+  }
+
+  .faq-card .box.box1.content {
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+
+  .faq-card:hover.content {
+    opacity: 1;
+  }
+
+  .faq-card .box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #800020, #a7a6a5, #800020);
+    transform: translateY(100px);
+    z-index: 1;
+  }
+
+  .faq-card:hover .box1 {
+    transform: translateY(0);
+    box-shadow: 0 0 50px #800020;
+  }
+
+  .faq-card .box2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c8c6;
+    box-shadow: 0 20px 50px rgb(29, 28, 28);
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translateY(-100px);
+  }
+
+  .faq-card:hover .box2 {
+    transform: translateY(0);
+  }
+
+  .faq-card p{
+    margin: 0%;
+  }
+
+  .faq-card button {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+    color: black;
+    border: 1px solid #333;
+    padding: 5px;
+    font-weight: 900;
+  }
+
+  .faq-card h3 {
+    font-size: 20px;
+    margin: 10px 0 0;
+    padding: 0%;
+    color: white;
+    text-align: center;
+  }
+
+  #work-more-content {
+    background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #work-more-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #faq-more-content {
+    background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #faq-more-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        padding: 0 10px;
+        overflow-x: auto;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #800020;
+        gap: 15px;
+        padding: 20px;
+        margin-top: 50px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .home-content .typing-text {
+        width: 100%;
+    }
+
+    .home-content h2 {
+        color: #800020;
+    }
+
+    .img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parent img {
+        width: 270px;
+        max-width: 300px;
+    }
+
+}
+
+.resume form {
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+  padding: 20px;
+  max-width: 600px;
+}
+.resume h1 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+}
+.resume fieldset {
+  border: 3px solid brown;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.resume legend {
+  font-size: 30px;
+  border-bottom: 2px solid brown;
+  text-align: left;
+  color: brown;
+}
+.resume label {
+  font-size: 26px;
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+.resume input,textarea {
+  margin-top: 4px;
+  padding: 8px;
+  width: calc(100% - 1px);
+  border: 1px solid brown;
+  border-radius: 4px;
+  color: black;
+  background-color: #c9c8c6;
+  box-sizing: border-box;
+}
+.resume button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(45deg, #800020, #c9c8c6, #800020);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px brown;
+  margin-top: 10px;
+  font-size: 22px;
+  font-family:'Times New Roman', Times, serif;
+  padding: 10px;
+  cursor: pointer;
+}
+.resume button:hover {
+  font-size: 26px;
+}
+#displayed-resume {
+  margin: auto;
+  background: linear-gradient(45deg, #df728d, #c9c8c6, #df7f97); 
+  padding: 20px;
+  max-width: 600px;
+}
+.resume h2 {
+  color: brown;
+  font-size: 26px;
+  border-bottom: 2px solid brown;
+  padding-bottom: 10px;
+}
+.resume fieldset {
+  border: 3px solid brown;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.resume legend {
+  font-size: 30px;
+  border-bottom: 2px solid brown;
+  text-align: left;
+  color: brown;
+}
+.resume ul li {
+  font-size: 1.5rem;
+  color: black;
+}
+.resume span {
+  color: black;
+  font-size: 1rem;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .resume body {
+      padding: 10px;
+      margin: 10px;
+  }
+  .resume form {
+      padding: 8px;
+  }
+  #displayed-resume {
+      padding: 2px;
+      margin: 10px;
+  }
+  .resume fieldset {
+      border: 3px solid brown;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+  }
+  .resume h2 {
+      font-size: 20px;
+  }
+  .resume span {
+      font-size: 16px;
+      justify-content: space-around;
+  }
+}

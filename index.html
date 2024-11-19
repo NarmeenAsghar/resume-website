@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--main content start-->
+    <main class="container">
+      <!--header start-->
+      <header>
+        <i class="italic">R.E.S.U.M.E</i>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </label>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#build-your-resume">Build your Resume</a>
+          <a href="#faqs">FAQ's</a>
+        </nav>
+      </header>
+      <!--header end-->
+
+      <!--home section-->
+      <section id="home" class="home-section">
+        <div class="home-content">
+          <h2>Your Way</h2>
+          <h1 class="typing-text">Your Resume!</h1>
+          <p>
+            Are you ready to take the next step in your career?... <br />
+            We make building a professional, eye-catching resume quick and easy.
+            Our intuitive resume builder lets you create a polished,
+            personalized resume that showcases your skills and experience in the
+            best light.
+          </p>
+        </div>
+        <div class="home-image">
+          <img
+            src="image.webp"
+            alt="resume image"
+            class="img"
+            width="400px"
+            height="300px"
+          />
+        </div>
+      </section>
+      <!--home section-->
+
+      <!--div's-->
+      <div class="parent">
+        <!--work-->
+        <section id="how-it-works" class="work-card">
+          <div class="box box1">
+            <div class="content">
+              <img src="how-it-works.webp" alt="image" title="vacation" />
+              <h3>How It Works</h3>
+            </div>
+          </div>
+          <div class="box box2">
+            <div class="content">
+              <p>
+                Creating your resume has never been easier! Just follow these
+                simple steps to craft a standout resume
+              </p>
+              <button id="work-more-btn"><b>More / Less</b></button>
+            </div>
+          </div>
+        </section>
+        <!--work-->
+
+        <!--resume-->
+        <section id="build-your-resume" class="resume-card">
+          <div class="box box1">
+            <div class="content">
+              <img src="resume-builder.png" alt="image" title="beach side" />
+              <h3>Build Your Resume</h3>
+            </div>
+          </div>
+          <div class="box box2">
+            <div class="content">
+              <p>
+                We provide a simple and easy-to-use platform to help you create
+                a polished, professional resume
+              </p>
+              <button id="resume-more-btn"><b>More / Less</b></button>
+            </div>
+          </div>
+        </section>
+        <!--resume-->
+
+        <!--faqs-->
+        <section id="faqs" class="faq-card">
+          <div class="box box1">
+            <div class="content">
+              <img src="faq-image.avif" alt="image" title="thunderstroms" />
+              <h3>Resume Related Faq's</h3>
+            </div>
+          </div>
+          <div class="box box2">
+            <div class="content">
+              <p>Frequently Asked Questions</p>
+              <button id="faq-more-btn"><b>More / Less</b></button>
+            </div>
+          </div>
+        </section>
+        <!--faqs-->
+      </div>
+      <!--div's-->
+
+      <!--work content-->
+      <section id="work-more-content" style="display: none">
+        <div>
+          <h2>How It Works</h2>
+          <p>
+            Creating a standout resume has never been easier! Follow these
+            simple steps to craft a professional, eye-catching resume in
+            minutes:
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <h3>1. Fill In Your Details:</h3>
+              <p>
+                Simply fill in your personal information, work experience,
+                education, skills, and achievements. Our step-by-step guide
+                ensures you won't miss any important section. Plus, you can save
+                your progress and come back anytime.
+              </p>
+            </div>
+
+            <div class="step">
+              <h3>2. Download or Share:</h3>
+              <p>
+                Once you're satisfied with your resume, download it with PDF or
+                share it directly with recruiters via a secure link. You can
+                even send it straight to job applications without leaving the
+                platform!
+              </p>
+            </div>
+
+            <div class="step">
+              <h3>3. Update Anytime:</h3>
+              <p>
+                Your career evolves, and so should your resume! Return anytime
+                to update your information or create a new version with just a
+                few clicks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--work content-->
+
+      <!--resume content-->
+      <section id="resume-more-content" class="resume" style="display: none">
+        <h1>Resume</h1>
+        <form id="form">
+          <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="username">UserName:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+            <br />
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+            <br />
+            <label for="contact-no">Contact-no:</label>
+            <input
+              type="tel"
+              id="contact-no"
+              placeholder="Enter your phone number"
+              required
+            />
+            <br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your vaild email"
+              required
+            />
+            <br />
+            <label for="address">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="4"
+              placeholder="Enter your address here"
+              required
+            ></textarea>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>EDUCATION</legend>
+            <label for="degree">Degree:</label>
+            <input
+              type="text"
+              id="degree"
+              name="degree"
+              placeholder="Enter your degree"
+              required
+            />
+
+            <label for="institution">Institution:</label>
+            <input
+              type="text"
+              id="institution"
+              name="institution"
+              placeholder="Enter institution name"
+              required
+            />
+
+            <label for="year">Graduation Year:</label>
+            <input
+              type="text"
+              id="year"
+              name="year"
+              placeholder="Enter graduation year"
+              required
+            />
+
+            <button type="button" onclick="addEducation()">
+              Add Education
+            </button>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>EXPERIENCE</legend>
+            <label for="job-title">Job Title:</label>
+            <input
+              type="text"
+              id="job-title"
+              name="job-title"
+              placeholder="Enter job title"
+              required
+            />
+
+            <label for="company">Company:</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Enter company name"
+              required
+            />
+
+            <label for="duration">Duration:</label>
+            <input
+              type="text"
+              id="duration"
+              name="duration"
+              placeholder="Enter job duration (e.g., 2 years)"
+              required
+            />
+
+            <button type="button" onclick="addExperience()">
+              Add Experience
+            </button>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>SKILLS</legend>
+            <label for="skills">Skills:</label>
+            <input
+              type="text"
+              id="skills"
+              name="skills"
+              placeholder="Enter a skill"
+              required
+            />
+            <button type="button" onclick="addSkill()">Add Skill</button>
+          </fieldset>
+          <br />
+          <button type="submit"><b>Generate Resume</b></button>
+        </form>
+        <br />
+        <!--Editable and Dynamic resume for display--> 
+        <div id="displayed-resume" contenteditable="true"></div>
+
+        <!--section for the shareable link and downloading option-->
+        <div id="shareable-link-container" style="display: none">
+          <h2>SHAREABLE LINK</h2>
+          <p>View and edit your resume through this link!</p>
+          <a href="#" id="shareable-link" target="_blank"></a>
+          <br />
+          <button id="pdf-download"><b>Download as PDF</b></button>
+        </div>
+      </section>
+      <!--resume content-->
+
+      <!--faqs content-->
+      <section id="faq-more-content" style="display: none">
+        <h2 class="faq-headline">Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>1. How long does it take to build a resume?</h3>
+          <p>
+            "It usually takes about 10-15 minutes to fill in your details and
+            generate your resume."
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>2. Can I edit my resume later?</h3>
+          <p>
+            "Yes, you can always come back and make edits to your resume at any
+            time."
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>3. Is the resume builder free to use?</h3>
+          <p>
+            "Yes, our basic resume builder is completely free. However, some
+            premium templates and features may require a small fee."
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>4. In which formats can I download my resume?</h3>
+          <p>"You can download your resume in both PDF and Word formats."</p>
+        </div>
+      </section>
+      <!--faqs content-->
+    </main>
+    <!--main content ends-->
+    <script src="script.js"></script>
+  </body>
+</html>
