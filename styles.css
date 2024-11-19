@@ -66,10 +66,10 @@ header .italic {
   height: fit-content;
   margin: 50px;
   padding: 20px;
-  background: linear-gradient(
+   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
+    rgba(63, 63, 63, 0.274),
+    rgba(44, 44, 44, 0.24)
   );
   backdrop-filter: blur(10px);
   border-radius: 20px;
