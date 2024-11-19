@@ -68,8 +68,8 @@ header .italic {
   padding: 20px;
    background: linear-gradient(
     135deg,
-    rgba(63, 63, 63, 0.274),
-    rgba(44, 44, 44, 0.24)
+    rgba(163, 161, 161, 0.342),
+    rgba(131, 129, 129, 0.466)
   );
   backdrop-filter: blur(10px);
   border-radius: 20px;
