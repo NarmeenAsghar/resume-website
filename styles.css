@@ -66,7 +66,7 @@ header .italic {
   height: fit-content;
   margin: 50px;
   padding: 20px;
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(163, 161, 161, 0.342),
     rgba(131, 129, 129, 0.466)
@@ -470,18 +470,30 @@ textarea {
 @media (max-width: 600px) {
   body {
     width: 100%;
-    padding: 0 10px;
+    padding: 20px;
     overflow-x: auto;
+    background: linear-gradient(45deg, #810121, #7c7c7b, #75011e);;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   header {
-    padding: 2px;
-    padding-right: 6px;
+    padding: 10px;
+    margin: 6px;
+    padding-right: 20px;
+  }
+
+  header .italic {
+    margin: 6px;
+    padding-left: 40px;
+    color: #fff5e1;
+    font-size: 1.5rem;
+    position: sticky;
   }
 
   .navbar a {
     font-size: 1rem;
-    padding: 10px 0;
+    padding: 10px;
   }
 
   .navbar {
@@ -525,6 +537,7 @@ textarea {
 
   .home-content .typing-text {
     width: 100%;
+    font-size: 1.5rem;
   }
 
   .home-content h2 {
@@ -539,6 +552,7 @@ textarea {
   .parent {
     flex-direction: column;
     align-items: center;
+    margin: 10px;
   }
 
   .parent img {
@@ -559,7 +573,7 @@ textarea {
   .resume fieldset {
     border: 3px solid brown;
     border-radius: 8px;
-    padding: 16px;
+    padding: 10px;
     margin-bottom: 20px;
   }
   .resume h2 {
