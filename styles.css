@@ -375,6 +375,7 @@ header .italic {
   text-align: center;
   text-decoration: underline;
 }
+
 .resume form {
   margin: auto;
   border-radius: 8px;
@@ -382,29 +383,34 @@ header .italic {
   padding: 20px;
   max-width: 600px;
 }
+
 .resume h1 {
   text-align: center;
   color: black;
   font-size: 3rem;
 }
+
 .resume fieldset {
   border: 3px solid brown;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .resume legend {
   font-size: 30px;
   border-bottom: 2px solid brown;
   text-align: left;
   color: brown;
 }
+
 .resume label {
   font-size: 26px;
   display: block;
   margin-top: 10px;
   color: black;
 }
+
 .resume input,
 textarea {
   margin-top: 4px;
@@ -416,6 +422,7 @@ textarea {
   background-color: #c9c8c6;
   box-sizing: border-box;
 }
+
 .resume button {
   display: block;
   width: 100%;
@@ -430,37 +437,44 @@ textarea {
   padding: 10px;
   cursor: pointer;
 }
+
 .resume button:hover {
   font-size: 26px;
 }
+
 #displayed-resume {
   margin: auto;
   background: linear-gradient(45deg, #df728d, #c9c8c6, #df7f97);
   padding: 20px;
   max-width: 600px;
 }
+
 .resume h2 {
   color: brown;
   font-size: 26px;
   border-bottom: 2px solid brown;
   padding-bottom: 10px;
 }
+
 .resume fieldset {
   border: 3px solid brown;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .resume legend {
   font-size: 30px;
   border-bottom: 2px solid brown;
   text-align: left;
   color: brown;
 }
+
 .resume ul li {
   font-size: 1.5rem;
   color: black;
 }
+
 .resume span {
   color: black;
   font-size: 1rem;
@@ -559,26 +573,44 @@ textarea {
     width: 270px;
     max-width: 300px;
   }
+
+  #work-more-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  #faq-more-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+
   .resume body {
     padding: 10px;
     margin: 10px;
   }
+
   .resume form {
     padding: 8px;
   }
+
   #displayed-resume {
     padding: 2px;
     margin: 10px;
   }
+
   .resume fieldset {
     border: 3px solid brown;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 20px;
   }
+
   .resume h2 {
     font-size: 20px;
   }
+  
   .resume span {
     font-size: 16px;
     justify-content: space-around;
