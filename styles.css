@@ -484,7 +484,7 @@ textarea {
 @media (max-width: 600px) {
   body {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     overflow-x: auto;
     background: linear-gradient(45deg, #810121, #7c7c7b, #75011e);;
     box-sizing: border-box;
@@ -597,7 +597,7 @@ textarea {
 
   #displayed-resume {
     padding: 2px;
-    margin: 10px;
+    margin: 4px;
   }
 
  .resume fieldset {
