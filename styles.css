@@ -601,9 +601,10 @@ textarea {
   }
 
   .resume fieldset {
-    border: 3px solid brown;
+   border: 3px solid brown;
     border-radius: 8px;
-    padding: 10px;
+    padding: 2px;
+    margin: 10px;
     margin-bottom: 20px;
   }
 
