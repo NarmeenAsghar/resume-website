@@ -198,19 +198,19 @@ form.addEventListener("submit", (event: Event) => {
     <legend>PERSONAL INFORMATION</legend>
 
     <ul>
-    <li><u>Name:</u>  
+    <li><u>Name:</u> <br/> 
     <span contenteditable="true"> ${name}</span>
     </li>
-    <li><u>Contact:</u>  
+    <li><u>Contact:</u>  <br/>
     <span contenteditable="true"> ${contactno}</span>
     </li>
-    <li><u>Email:</u>  
+    <li><u>Email:</u> <br/> 
     <span contenteditable="true"> ${email}</span
     ></li>
-    <li><u>Date of Birth:</u> 
+    <li><u>Date of Birth:</u> <br/>
      <span contenteditable="true"> ${dob}</span>
      </li>
-    <li><u>Address:</u>  
+    <li><u>Address:</u>  <br/>
     <span contenteditable="true"> ${address}</span>
     </li>
     </ul>
